@@ -1,0 +1,495 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'goudy_bookletter_1911regular';
+    src: url('font/goudybookletter1911_regular_macroman/goudy_bookletter_1911-webfont.eot');
+    src: url('font/goudybookletter1911_regular_macroman/goudy_bookletter_1911-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/goudybookletter1911_regular_macroman/goudy_bookletter_1911-webfont.woff') format('woff'),
+         url('font/goudybookletter1911_regular_macroman/goudy_bookletter_1911-webfont.ttf') format('truetype'),
+         url('font/goudybookletter1911_regular_macroman/goudy_bookletter_1911-webfont.svg#goudy_bookletter_1911regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a:hover 
+{
+   color: white;
+}
+
+a:link, a:visited, a:active
+{
+    text-decoration: none;
+}
+
+.conteneur
+{
+    display: flex;
+    align-items: flex-start;
+    min-height: 100%;
+    position: relative;
+    width: auto;
+    height: auto;
+    margin-left: 10%;
+}
+
+#site_name_logo
+{
+    width: 100%;
+    display: flex;
+}
+
+.ban_du_site {
+    width: 100%;
+    display: flex;
+}
+
+#barreDeNav
+{
+    font-family: 'goudy_bookletter_1911regular', Arial, Verdana, sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    color: black;
+    width: auto;
+    height: auto;
+    border-top: 2.5px solid black;
+    border-bottom: 2.5px solid black;
+    text-align: justify;
+    padding: 1%;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0;
+    background-color: #7c98b4;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 20px 20px 20px 25px grey;
+}
+
+.link {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link p {
+    font-size: 100%;
+    text-align: center;
+}
+
+.link2 {
+    font-family: 'goudy_bookletter_1911regular', Arial, Verdana, sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    color: black;
+}
+
+.website_link {
+    font-family: 'goudy_bookletter_1911regular', Arial, Verdana, sans-serif;
+    text-align: center;
+    font-size: 1.1em;
+    color: #7c98b4;
+}
+
+.website_link:hover{
+    color: rgb(12, 173, 28);
+}
+
+#website_link2 {
+    font-family: 'goudy_bookletter_1911regular', Arial, Verdana, sans-serif;
+    text-align: center;
+    font-size: 1.0em;
+    color: #7c98b4;
+}
+
+.website_link2:hover{
+    color: rgb(12, 173, 28);
+}
+
+.mail_link:hover{
+    color: rgb(12, 173, 28);
+}
+
+.dropdown_link {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+}
+
+.dropdown_menu {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    min-width: 150px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #7c98b4;
+    height:auto;
+    z-index: 1;
+    box-shadow: 2.5px 2.5px 2.5px black;
+    border-top: none;
+    border-radius: 0.25rem;
+    display: none;
+}
+
+.dropdown_menu_big {
+    height: 300%;
+}
+
+.dropdown_link:hover .dropdown_menu {
+    display: flex;
+}
+
+h1 
+{
+    font-family: 'goudy_bookletter_1911regular', Arial, Verdana, sans-serif;
+    text-align: center;
+    font-size: 1.8em;
+    color: black;
+    text-decoration: underline;
+}
+
+h2
+{
+    font-family: 'goudy_bookletter_1911regular', Arial, Verdana, sans-serif;
+    text-align: center;
+    font-size: 1.6em;
+    color: #223f57;
+}
+
+h3
+{
+    font-family: 'goudy_bookletter_1911regular', Arial, Verdana, sans-serif;
+    font-size: 1.4em;
+    color: #223f57;
+    font-weight: bold;
+}
+
+p 
+{
+    font-family: 'goudy_bookletter_1911regular', Arial, Verdana, sans-serif;
+    font-size: 1.3em;
+    color: black;
+    height: auto;
+    text-align: justify;
+}
+
+.titre-nav {
+    width: 100%;
+}
+
+.titre-nav:hover {
+    color: white;
+}
+
+.titre-nav2 {
+    width: 100%;
+}
+
+.titre-nav2:hover {
+    color: #223f57;
+}
+
+li
+{
+    font-family: 'goudy_bookletter_1911regular', Arial, Verdana, sans-serif;
+    font-size: 1.3em;
+    color: black;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: justify;
+}
+
+ul
+{
+    text-align: justify;
+}
+
+#moduleprincipal
+{
+    font-family: 'goudy_bookletter_1911regular', Arial, Verdana, sans-serif;
+    font-size: 1.0em;
+    color: black;
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 50px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.moduleprincipal_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.moduleprincipal_content2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.moduleprincipal_content3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.moduleprincipal_title {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.dossier_type {
+    font-size: 1.0em;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+    border: 3px #7c98b4 groove;
+    padding: 2%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.valorisation_cadre_dossiers {
+    margin: 0 auto;
+    padding: 2%;
+}
+
+#images_dans_dossier_type {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+    border: 3px #7c98b4 groove;
+    padding: 2%;
+    background-color: whitesmoke;
+}
+
+.maxi_dossier {
+    display: flex;
+  
+}
+
+.bigger_image{
+    display: flex;
+    width: 60%;
+    object-fit: contain;
+    height: 75%;
+    margin: auto;
+}
+
+.bigger_image2{
+    display: flex;
+    width: 60%;
+    object-fit: contain;
+    height: 75%;
+    margin: auto;
+}
+
+.bigger_image_background{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.75);
+    position: fixed;
+    z-index: 1;
+    justify-content: center;
+}
+
+.bigger_image_background2{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.75);
+    position: fixed;
+    z-index: 1;
+    justify-content: center;
+}
+
+.img_container1 
+{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+    margin-top: 2%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.img_container1 img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.img_container2 
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+   
+}
+
+.img_container2 img {
+    width: 25%;
+    cursor: pointer;
+}
+
+article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.random_article{
+    text-align: center;
+}
+
+#colonnedroite iframe {
+    border: 0;
+    width: 100%;
+}
+
+.bulletin_adhesion {
+    width: 100%;
+    display: flex;
+}
+
+.bulletin_link {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+    border: 3px #7c98b4 groove;
+    border-radius: 25%;
+    padding: 3%;
+    background-color: whitesmoke;
+}
+
+.bulletin_link:hover {
+    color: rgb(12, 173, 28);
+}
+
+
+#accueil_pix {
+    text-align: center;
+}
+
+#accueil_pix2 {
+    text-align: center;
+}
+
+#accueil_pix3 {
+    text-align: center;
+}
+
+#accueil_pix4 {
+    text-align: center;
+}
+
+#accueil_pix5 {
+    text-align: center;
+}
+
+#accueil_pix6 {
+    text-align: center;
+}
+
+#accueil_pix7 {
+    text-align: center;
+}
+
+#accueil_pix8 {
+    text-align: center;
+}
+
+#colonnedroite
+{
+    font-family: 'goudy_bookletter_1911regular', Arial, Verdana, sans-serif;
+    font-size: 1.2em;
+    color: black;
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 50px;
+}
+
+#footer
+{
+    font-family: 'goudy_bookletter_1911regular', Arial, Verdana, sans-serif;
+    text-align: center;
+    font-size: 1.4em;
+    color: black;
+    width: auto;
+    height: auto;
+    border-top: 2.5px solid black;
+    text-align: justify;
+    padding: 2%;/* Marge intérieure de 12px */
+    background-color: #7c98b4;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    box-shadow: 20px 20px 20px 25px grey;
+    grid-row: footer; 
+    grid-column: left;
+}
+
+.copyright {
+    font-family: 'goudy_bookletter_1911regular', Arial, Verdana, sans-serif;
+    text-align: center;
+    font-size: 0.8em;
+    width: auto;
+    height: auto;
+    border-bottom: 2.5px solid black;
+    text-align: justify;
+    padding-bottom: 1%;
+    background-color: #7c98b4;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.copyright p {
+    color: whitesmoke;
+}
+
+/* responsive start */
+
+@media (max-width: 800px){
+
+    #barreDeNav{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 5%;
+    
+    }
+
+    .conteneur{
+        flex-direction: column;
+    }
+
+    #colonnedroite{
+        display: none;
+    }
+
+    .dropdown_menu_phone {
+        height: auto;
+    }
+}
